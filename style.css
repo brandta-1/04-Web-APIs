@@ -1,12 +1,68 @@
+body {
+    background-color: pink;
+    margin: 0px;
+}
 
-.time{
-    display: flex;
+h1 {
+    width: 100%;
+    text-align: center;
+    border-bottom: solid;
+    color: purple;
+}
+
+.q,
+.score {
+    font-size: 40;
+}
+
+.q-content {
+    width: 100%;
+    text-align: center;
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    background-color: #d0e656;
+    border: solid;
+    color: purple;
+    text-align: center;
+    text-decoration: none;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.ans {
+    width: 100%;
+    text-align: center;
 }
 
 .table,
 #msg,
-.a
-{
-    display:none;
+.a,
+.time {
+    display: none;
 }
 
+.table {
+    background-color: plum;
+    border: solid;
+    padding: 10px;
+}
+
+.table>* {
+    text-align: center;
+    color: green;
+    margin-bottom: 10px;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+}
