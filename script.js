@@ -106,13 +106,13 @@ function updateScore() {
 }
 
 function endGame() {
-    //store time left at the game end, because the countdown timer will iterate for 1 more second.
-    const ft = tLeft;
+    
     //prevent displaying negative time
     if (tLeft <= 0) {
         tLeft = 0;
     }
-
+    //store time left at the game end, because the countdown timer will iterate for 1 more second.
+    const ft = tLeft;
     //display time left, replace question with new instructions, stop displaying answer choices, display initials textarea, create a submit button
     theTime.textContent = "Game ended with " + ft;
     currQ.textContent = "Game over! Enter initials below for hi-score table";
