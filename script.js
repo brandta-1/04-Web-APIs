@@ -106,14 +106,15 @@ function updateScore() {
 }
 
 function endGame() {
-
+    //store time left at the game end, because the countdown timer will iterate for 1 more second.
+    const ft = tLeft;
     //prevent displaying negative time
     if (tLeft <= 0) {
         tLeft = 0;
     }
 
     //display time left, replace question with new instructions, stop displaying answer choices, display initials textarea, create a submit button
-    theTime.textContent = "Game ended with " + tLeft;
+    theTime.textContent = "Game ended with " + ft;
     currQ.textContent = "Game over! Enter initials below for hi-score table";
     currA.style.display = "none";
     initials.style.display = "inline-block";
@@ -134,7 +135,7 @@ function endGame() {
         var playerHS = {
             player: initials.value.trim(),
             score: right,
-            time: tLeft
+            time: ft
 
         };
 
@@ -156,7 +157,6 @@ function displayHS() {
 
     for (var i = 0; i < gameHS.length; i++) {
         var playerHS = gameHS[i];
-        console.log(playerHS);
         var listHS = tableHS.appendChild(document.createElement('li'));
         listHS.textContent = "Player: " + playerHS.player + " Score: " + playerHS.score + " Time left: " + playerHS.time;
     }
