@@ -9,28 +9,41 @@
 </head>
 
 <body>
-    <button class="s-btn">Start</button>
-    <div class="q">Click to Start</div>
-    <ul class="a">
-        <button class="ans" id="a-0">answer A</button><br>
-        <button class="ans" id="a-1">answer B</button><br>
-        <button class="ans" id="a-2">answer C</button><br>
-        <button class="ans" id="a-3">answer D</button><br>
-    </ul>
 
-    <div class="score"></div>
+    <h1>JavaScript Quiz</h1>
+    <div class="top">
+        <button class="s-btn">Start</button>
 
-    <div class="time">
-        <p class="countdown">120</p>
-        <p>s left</p>
     </div>
+    <!-- quiz content-->
+    <div class="q-content">
+        <!-- quiz question-->
+        <div class="q"></div>
+        <!-- quiz answers-->
+        <ul class="a">
+            <button class="ans" id="a-0"></button><br>
+            <button class="ans" id="a-1"></button><br>
+            <button class="ans" id="a-2"></button><br>
+            <button class="ans" id="a-3"></button><br>
+        </ul>
 
-    <div class="playersubmit">
-        <textarea id="msg" name="comments"></textarea>
-    </div>
-    <div class="table">
-        <h3>Hi-Score Table</h3>
+        <!-- quiz score-->
+        <div class="score"></div>
 
+        <!-- quiz time-->
+        <div class="time">
+            <p class="countdown">120</p>
+            <p>s left</p>
+        </div>
+
+        <!-- submit player initials, hi-score table-->
+        <div class="playersubmit">
+            <textarea id="msg" name="comments"></textarea>
+        </div>
+        <div class="table">
+            <h3>Hi-Score Table</h3>
+
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
